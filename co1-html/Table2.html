@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Table</title>
+
+    <style>
+        table {
+            width: 20%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <table border="1">
+        <caption><b>Table Caption</b>: College Student Details</caption>
+        <tr>
+            <th>Department</th>
+            <th>Student Name</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>CSE</td>
+            <td>Ravi</td>
+            <td rowspan="2">II</td>
+        </tr>
+
+        <tr>
+            <td>ECE</td>
+            <td>Rahul</td>
+        </tr>
+
+        <tr>
+            <td>CSE</td>
+            <td>Sita</td>
+            <td>III</td>
+        </tr>
+    </table>
+
+    <h2>Sales Report</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Laptop</td>
+                <td>50000</td>
+            </tr>
+
+            <tr>
+                <td>Mobile</td>
+                <td>20000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="2">Total: 70000</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
